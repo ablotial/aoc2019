@@ -1,4 +1,5 @@
 import sys
+import argparse
 
 def get_fuel( mass ):
     """crappy recursive function to calculate amonut of fuel needed"""
@@ -9,7 +10,11 @@ def get_fuel( mass ):
         temp = (mass // 3) - 2
         return temp + get_fuel( (mass // 3) - 2 )
 
-filename = sys.argv[1]
+parser = argparse.ArgumentParser()
+parser.add_argument("filename")
+args = parser.parse_args()
+
+filename = args.filename
 data = open(filename,"r")
 
 total = 0

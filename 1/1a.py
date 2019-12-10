@@ -1,6 +1,11 @@
 import sys
+import argparse
 
-filename = sys.argv[1]
+parser = argparse.ArgumentParser();
+parser.add_argument("filename")
+args = parser.parse_args();
+
+filename = args.filename
 data = open(filename,"r")
 
 total = 0
