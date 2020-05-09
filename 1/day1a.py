@@ -1,7 +1,3 @@
-import sys
-
-sys.path.append("/home/deana/projects/aoc2019/")
-
 import aocutils
 
 def getfuel( mass ):
