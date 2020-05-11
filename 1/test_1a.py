@@ -1,5 +1,5 @@
 import pytest
-import day1a
+from day1a import getfuel, totalfuel
 
 def test_mass12():
     returnvalue = getfuel(12)

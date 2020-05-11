@@ -26,6 +26,7 @@ To install for development, run:
 ```
 pip install -e .[dev]
 ```
+(where [dev] is the name of the requirements group from setup.py)
 
 Tests
 -----
