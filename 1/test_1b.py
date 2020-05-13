@@ -1,4 +1,5 @@
 import pytest
+from day1b import getfuel, totalfuel
 
 def test_mass14():
     returnvalue = getfuel(14)
@@ -12,3 +13,7 @@ def test_mass100756():
     returnvalue = getfuel(100756)
     assert returnvalue == 50346
 
+def test_sumis51314():
+    testmasses = [14,1969,100756]
+    returnvalue = totalfuel( testmasses )
+    assert returnvalue == 51314
